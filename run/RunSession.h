@@ -1,5 +1,4 @@
 #pragma once
-
 #include "../input/IInputGenerator.h"
 #include "../scoring/IScoringRule.h"
 #include "../reward/IRewardRule.h"
@@ -10,14 +9,16 @@ private:
     IInputGenerator* inputGen;
     IScoringRule* scoringRule;
     IRewardRule* rewardRule;
-    ShopSystem shop;
 
+    ShopSystem shop;
     int money;
 
 public:
-    RunSession(IInputGenerator* input,
-               IScoringRule* score,
-               IRewardRule* reward);
+    RunSession(
+        IInputGenerator* input,
+        IScoringRule* score,
+        IRewardRule* reward
+    );
 
     void start();
 };

@@ -1,14 +1,14 @@
 #include "run/RunSession.h"
-#include "input/FixedInputGenerator.h"
 #include "scoring/SimpleScoringRule.h"
-#include "reward/SimpleRewardRule.h"
 #include "input/RandomInputGenerator.h"
+#include "reward/BonusRewardRule.h"
+
 
 int main()
 {
     RandomInputGenerator inputGen;
     SimpleScoringRule scoring;
-    SimpleRewardRule reward;
+    BonusRewardRule reward;
 
     RunSession run(&inputGen, &scoring, &reward);
 
