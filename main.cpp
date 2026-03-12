@@ -2,10 +2,11 @@
 #include "input/FixedInputGenerator.h"
 #include "scoring/SimpleScoringRule.h"
 #include "reward/SimpleRewardRule.h"
+#include "input/RandomInputGenerator.h"
 
 int main()
 {
-    FixedInputGenerator inputGen;
+    RandomInputGenerator inputGen;
     SimpleScoringRule scoring;
     SimpleRewardRule reward;
 
